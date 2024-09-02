@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.converterContainer {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.converterContainer form {
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.converterContainer input {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 6rem;
+}
+
+.convertBtn {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: slategray;
+
+}

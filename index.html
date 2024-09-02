@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Binary2Decimal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="converterContainer">
+        <form action="#">
+            <label> Choose the Number's Base:
+                <select name="numberType" id="numberType">
+                    <option value="Base 2">Base 2 (Binary)</option>
+                    <option value="Base 5">Base 5</option>
+                    <option value="Base 8">Base 8 (Octal)</option>
+                </select>
+            </label>
+        </form>
+        <form action="#" >
+                <input type="number" min="0" max="1" maxlength="1" required name="digit1">
+                <input type="number" min="0" max="1" maxlength="1" required name="digit2">
+                <input type="number" min="0" max="1" maxlength="1" required name="digit3">
+                <input type="number" min="0" max="1" maxlength="1" required name="digit4">
+                <input type="number" min="0" max="1" maxlength="1" required name="digit5">
+                <input type="number" min="0" max="1" maxlength="1" required name="digit6">
+                <input type="number" min="0" max="1" maxlength="1" required name="digit7">
+                <input type="number" min="0" max="1" maxlength="1" required name="digit8">
+        </form>
+        <button class="convertBtn">Convert</button>
+    </div>
+</body>
+<script type="module" src="javascripts/main.js" defer></script>
+</html>
