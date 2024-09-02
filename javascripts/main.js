@@ -47,6 +47,8 @@ digitInputs.forEach(input => {
     })
 });
 
+// I don't think this is the right approach, I want to check when the select menu is a certain option
+// and apply the correct parameter to the function accordingly.
 numberTypeMenu.addEventListener('change', (e) => {
     const base = e.target;
     if (e.target.options.value === 'Base 2') {
