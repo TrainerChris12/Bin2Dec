@@ -7,10 +7,11 @@
         for example the natural logarithm. It's up to you to figure out which function to use. */
 
 const digitInputs = document.querySelectorAll('form input');
+const digitForm = document.getElementById('digitForm');
 const convertBtn = document.querySelector('.convertBtn');
 const numberTypeMenu = document.getElementById('numberType');
 
-// function that can handle base conversion for a given target base
+// function that can handle base conversion for a given base
 function convertNumberBaseOf(base) {
 
     // for each input from the user calculate the value in base 10,
@@ -25,26 +26,25 @@ function convertNumberBaseOf(base) {
 }
 
 
-/*                  Validate User Input                     */
-digitInputs.forEach(input => {
-    input.addEventListener('input', () => {
-        // limits the user input to only one input
-        if (input.value.length > 1) {
-            input.value = input.value.slice(0, 1);
-        }
 
-        // ensures that the input is either '1' or '0'
+digitForm.addEventListener('input', e => {
+    const input = e.target;
+
+    // limits the user input to only one input
+    if (input.value.length > 1) {
+        input.value = input.value.slice(0, 1);
+    }
+    // ensures that the input is either '1' or '0'
         if (input.value !== '1' && input.value !== '0') {
             input.value = '';
         }
 
-        //auto tabs cursor
+    //auto tabs cursor
         if (input.value !== '') {
             if (input.nextElementSibling) {
                 input.nextElementSibling.focus();
             }
         }
-    })
 });
 
 // I don't think this is the right approach, I want to check when the select menu is a certain option
